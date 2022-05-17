@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- <app-header></app-header> -->
-    <div class=" all-view">
+    <div class="all-view">
       <router-view></router-view>
     </div>
     <!-- <app-maincontent></app-maincontent> -->
@@ -28,7 +28,5 @@ export default{
   width: 100%;
 }
 
-.router-link{
 
-}
 </style>
