@@ -268,7 +268,7 @@ export default{
 }
 </script>
 
-<style>
+<style >
 /* main content styles */
 .dashboard {
   margin-top: 25px;

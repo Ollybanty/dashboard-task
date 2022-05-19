@@ -20,7 +20,7 @@ export default{
 }
 </script>
 
-<style>
+<style >
 
 .all-view{
   margin: 0;

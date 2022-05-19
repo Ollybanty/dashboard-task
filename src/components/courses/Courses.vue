@@ -20,8 +20,11 @@
                                         <span><img src="../../assets/images/heartSidebar.png" alt=""></span> Wishlist</li>
                                     <li>
                                         <span><img src="../../assets/images/Booksidebars.png" alt=""></span> Enrolled Courses</li>
-                                    <li>
-                                        <span><img src="../../assets/images/videoSidebar.png" alt=""></span> Active Courses</li>
+                                    <router-link to="/assignment">
+                                        <li>
+                                        <span><img src="../../assets/images/videoSidebar.png" alt=""></span> Active Courses
+                                    </li>
+                                    </router-link>
                                     <li >
                                         <span><img src="../../assets/images/ConfirmedSidebar.png" alt=""></span> Completed Courses
                                     </li>
@@ -45,7 +48,7 @@
                         </div>
                 
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-8 courseotherpart">
         <div class="container-fluid d-flex justify-content-between py-3 header-class">
                 <div class="d-flex align-items-center">
                   
@@ -74,7 +77,7 @@
                      <p class="sub-data-title">All Lessons:60 <span>Completed Lessons 20/50</span></p>
                      <div class="d-flex justify-content-between">
                          <div class="progressCtn">
-                             <p class="progressBar"></p>
+                             <p class="progressBar bg-danger"></p>
                            
                                  <img class="progressCircle" src="../../assets/images/progressbar.png" alt="">
                             
@@ -167,6 +170,10 @@
     color: #ffffff;
 }
 
+.courseDashboard:active{
+    text-decoration: none;
+}
+
 .coursepage{
     padding: 0;
     margin: 0;
@@ -184,7 +191,6 @@
 
 .courseSidebar{
     background: #232B37;
-    /* background: red; */
     color: #ffffff;
 }
 
@@ -217,11 +223,19 @@
     
 }
 
+.courseotherpart{
+    padding: 0;
+    margin: 0;
+    /* width: 100%; */
+}
+
 /* Course details  */
 
 .header-class{
      height: 100px;
-     width: 100%;
+     /* width: 100vw; */
+     /* max-width: 900px; */
+     /* max-width: 1000px; */
 }
 
 .course-title {
