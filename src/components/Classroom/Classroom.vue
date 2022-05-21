@@ -85,25 +85,25 @@
 
                 <!-- main content -->
                 <div>
-                    <div class="px-5 mt-3" style="border:2px solid green">
+                    <div class="px-5 mt-3">
                       <p class="profilename"><span><img src="../../assets/images/profile-pic.png" alt=""></span> Hi Oladele!</p>
                       <p style="font-weight:500; color: #232B37;">What would you like to share your works with the community?</p>
-                      <div class="postCard px-4">
+                      <div class="postCard px-4 py-3">
                          
-                              <p>Create post</p>
-                          <input type="text" placeholder="What would you like to share?">
+                              <p class="cardHead">Create post</p>
+                          <input class="cardInput px-4" type="text" placeholder="What would you like to share?">
                          <div class="d-flex justify-content-between">
                              <div class="d-flex">
                                 <div>
-                                    <p><span><img src="../../assets/images/img.png" alt=""></span>Image</p>
+                                    <p class="cardTexts"><span><img class="cardImgs" src="../../assets/images/img.png" alt=""></span>Image</p>
                                 </div>
                                 <div>
-                                <p><span><img src="../../assets/images/videos.png" alt=""></span>Video</p>
+                                <p class="cardTexts"><span><img class="cardVideoImgs" src="../../assets/images/videos.png" alt=""></span>Video</p>
   
                                 </div>
                              </div>
                              <div>
-                                 <button class="btn btn-danger">Publish</button>
+                                 <button class="btn publishBtn">Publish</button>
                              </div>
                          </div>
                       </div>
@@ -251,6 +251,57 @@
 }
 
 .postCard{
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
+    width: 100%;
+    max-width: 800px;
+    background: #ffffff;
+    border-radius: 10px;
 }
+
+.cardHead{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.cardInput{
+    height: 100px;
+    width: 750px;
+    border-radius: 20px;
+    background: #E5E5E5;
+    border:none;
+    margin-bottom: 20px;
+  
+}
+
+.cardInput:focus{
+    outline: none;
+}
+
+.cardImgs{
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
+
+.cardVideoImgs{
+    height: 15px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.cardTexts{
+    font-size: 15px;
+    color: #8F8E95;
+    margin-right: 30px;
+}
+
+.publishBtn{
+    background: #C01C03;
+    border-radius: 20px;
+    height: 35px;
+    width: 130px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
 </style>>
