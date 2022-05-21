@@ -10,7 +10,9 @@ import Sidebar from './components/headers_footers/Sidebar.vue';
 import Courses from './components/courses/Courses.vue';
 import Classroom from './components/Classroom/Classroom.vue';
 import Assignment from './components/assignment/Assignment.vue';
-import Home from './components/index/index.vue'
+import Home from './components/index/index.vue';
+import Docupload from './components/DocUpload/DocUpload.vue';
+import Getcertificate from './components/Getcertificate/Getcertificate.vue'
 
 const app = createApp(App);
 
@@ -21,6 +23,8 @@ const routes = createRouter({
         { path: '/courses', component: Courses},
         { path: '/classroom', component: Classroom},
         { path: '/assignment', component: Assignment},
+        { path: '/docupload', component: Docupload},
+        { path: '/getcertificate', component: Getcertificate}
     ]   
 });
 

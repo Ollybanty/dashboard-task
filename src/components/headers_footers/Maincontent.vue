@@ -3,20 +3,26 @@
  <div class="dashboard container">
          <h1 class="display-4 header-title">Dashboard</h1>
         <div class="row">
-                <div
-                 class="g-col-6 d-flex justify-content-evenly align-items-stretch book-card"
-                    >
-                    <div>
-                        <img src="../../assets/images/book.png" alt="" />
-                    </div>
+                
+                    <div
+                    class="g-col-6 d-flex justify-content-evenly align-items-stretch book-card"
+                        >
+                        <div>
+                            <img src="../../assets/images/book.png" alt="" />
+                        </div>
 
-                   
-                      <div>
-                        <p class="bookNumber">10</p>
-                        <p class="bookText">Enrolled Courses</p>
+                      
+                        <router-link to="/courses" style="text-decoration:none"> 
+                                <div>
+                                  <p class="bookNumber">10</p>
+                                  <p class="bookText">Enrolled Courses</p>
+                              </div>
+
+                        </router-link>
+                        
+                      
                     </div>
-                   
-                </div>
+               
                 <div
                 class="g-col-6 d-flex justify-content-evenly align-items-stretch book-card"
                 >
@@ -269,6 +275,10 @@ export default{
 </script>
 
 <style >
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
 /* main content styles */
 .dashboard {
   margin-top: 25px;
@@ -369,6 +379,9 @@ width: 100%;
 .dataImg{
     border-radius: 15px;
 }
+
+
+
 
 /* end of card styling  */
 </style>

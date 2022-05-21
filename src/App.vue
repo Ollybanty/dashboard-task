@@ -22,6 +22,10 @@ export default{
 
 <style >
 
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
 .all-view{
   margin: 0;
   padding: 0;

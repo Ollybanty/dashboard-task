@@ -1,5 +1,256 @@
 <template>
-    <div>
-        Ollybanty
+   <div class="row d-flex communityCtn">
+            <div class="col-lg-2 courseSidebar">
+                 <router-link to="/" class="mt-3" style="color:#ffffff; text-decoration:none">
+               
+                <p class="myonlearner">:<span>On-</span>learner</p>
+            </router-link>
+                <!-- <div>
+                    <img class="onlearnerlogo " src="../../assets/images/onlearner.png" alt="">
+                </div> -->
+                        <div class="pt-5 courseSideBar-items">
+                                <ul>
+                                    <router-link to="/" style="text-decoration:none; color: #ffffff;">
+                                       <li class="courseDashboard">
+                                    <span><img src="../../assets/images/stackSidebar.png" alt=""></span> Dashboard</li>
+                                    
+                                    </router-link>
+                                    <!-- <li>
+                                    <span><img src="../../assets/images/stackSidebar.png" alt=""></span> Dashboard</li>
+                                    <li> -->
+                                        <li><span><img src="../../assets/images/userSidebar.png" alt=""></span> My Profile</li>
+                                    <li>
+                                        <span><img src="../../assets/images/heartSidebar.png" alt=""></span> Wishlist</li>
+                                    <router-link to="/courses" style="color:#ffffff; text-decoration:none">
+                                        <li>
+                                        <span><img src="../../assets/images/Booksidebars.png" alt=""></span> Enrolled Courses
+                                    </li>
+                                    </router-link>
+                                    <router-link to="/assignment" style="color:#ffffff; text-decoration:none">
+                                        <li>
+                                        <span><img src="../../assets/images/videoSidebar.png" alt=""></span> Active Courses
+                                    </li>
+                                    </router-link>
+                                    <li >
+                                        <span><img src="../../assets/images/ConfirmedSidebar.png" alt=""></span> Completed Courses
+                                    </li>
+                                    <li>
+                                    <span><img src="../../assets/images/project.png" alt=""></span> Project Page
+                                    </li>
+                                   <router-link to="/classroom" style="color:#ffffff; text-decoration:none">
+                                        <li>
+                                        <span><img src="../../assets/images/community.png" alt="">Student Community</span>
+                                    </li>
+                                   </router-link>
+                                </ul>
+                        </div>
+
+                        <!-- <div class="log-out">
+                            <div class="log-outBorder">...</div>
+                            <p><span><img src="../../assets/images/logout-btn.png" alt=""></span> Log Out</p>
+                        </div> -->
+
+                        <div>
+                        
+                            <p class="log-out"><span><img src="../../assets/images/logout-btn.png" alt=""></span> Log Out</p>
+                        </div>
+                
+            </div>
+        <div class="col-lg-10 courseotherpart" >
+        
+                <div class="certificateCtn">
+                            <div class="d-flex justify-content-between ollybanty px-5">
+                                <!-- <router-link to="/" class="mt-3">
+                                
+                                    <p class="myonlearner">:<span>On-</span>learner</p>
+                                </router-link> -->
+                                <div>
+                                    <input class="certificateInput px-5 mt-4" type="text" placeholder="Search Community">
+                                </div>
+                                <div class="d-flex mt-3">
+                                    <!-- <div>
+                                        <p class="createproject px-4 mt-1 py-1">Create a Project</p>
+                                    </div> -->
+                                    <div class="chatNotification">
+                                        <img class="chatBg" src="../../assets/images/chatIconBg.png" alt="">
+                                        <img class=" chatIcon" src="../../assets/images/chatIcon.png" alt="">
+                                    </div>
+                                    <div class="bellIcon">
+                                        <img src="../../assets/images/icon.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                </div>
+
+                <!-- main content -->
+                <div>
+                    <div class="px-5 mt-3" style="border:2px solid green">
+                      <p class="profilename"><span><img src="../../assets/images/profile-pic.png" alt=""></span> Hi Oladele!</p>
+                      <p style="font-weight:500; color: #232B37;">What would you like to share your works with the community?</p>
+                      <div class="postCard px-4">
+                         
+                              <p>Create post</p>
+                          <input type="text" placeholder="What would you like to share?">
+                         <div class="d-flex justify-content-between">
+                             <div class="d-flex">
+                                <div>
+                                    <p><span><img src="../../assets/images/img.png" alt=""></span>Image</p>
+                                </div>
+                                <div>
+                                <p><span><img src="../../assets/images/videos.png" alt=""></span>Video</p>
+  
+                                </div>
+                             </div>
+                             <div>
+                                 <button class="btn btn-danger">Publish</button>
+                             </div>
+                         </div>
+                      </div>
+                    </div>
+                </div>
+        </div>
     </div>
 </template>
+
+<style scoped>
+    
+.communityCtn{
+    margin-bottom: 200px;
+}
+
+.courseSidebar{
+    background: #232B37;
+    color: #ffffff;
+}
+
+.courseSideBar-items li:hover{
+    border-radius: 5px;
+    background-color: #C01C03;
+    cursor: pointer;
+}
+
+.courseSideBar-items li{
+    list-style-type: none;
+    font-size: 12px;
+    font-weight: 4600;
+    margin: 15px;
+    /* padding: 10px; */
+        padding: 5px;
+
+    /* width: 60%; */
+}
+
+.courseSidebar li span img{
+    padding-right: 10px;
+}
+
+ .log-out{
+    margin-top: 600px;
+    margin-bottom: 50px;
+    padding: 20px 20px;
+    border-top: 2px solid #000000;
+
+    
+}
+
+.courseotherpart{
+    padding: 0;
+    margin: 0;
+    /* width: 100%; */
+}
+
+.ollybanty{
+    height: 90px;
+    /* width:100%; */
+    background: #ffffff;
+   
+}
+
+.chatNotification{
+    position:relative;
+     margin-right: 20px;
+    
+}
+
+.chatBg{
+  max-height: 3rem;
+    max-width: 3rem; 
+}
+
+.chatIcon{
+    position: absolute;
+    top: 0;
+    left: 8px;
+    top: 10px;
+     max-height: 2rem;
+    max-width: 2rem; 
+}
+
+.bellIcon img{
+  max-height: 3rem;
+    max-width: 3rem; 
+    
+}
+
+.myonlearner{
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 15px 30px;
+}
+
+.myonlearner span{
+    color: #C01C03;
+}
+
+.certificateInput{
+    height: 40px;
+    width: 800px;
+    border-radius: 20px;
+    background: #E5E5E5;
+    border: none;
+    font-weight: 800;
+    color: #8F8E95;
+    
+}
+
+.certificateInput:focus{
+    outline: none;
+   
+}
+
+.createproject{
+    color: #ffffff;
+   
+    background: #C01C03;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.profliename{
+    color: #000000;
+    font-weight: 600;
+
+}
+
+.profilename{
+    font-size: 25px;
+    font-weight: 600;
+    /* margin-right: 50px; */
+  
+}
+
+.profilename img{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-right: 50px;
+}
+
+.postCard{
+    border: 2px solid yellow;
+}
+</style>>

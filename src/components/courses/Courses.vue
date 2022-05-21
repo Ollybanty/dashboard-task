@@ -1,5 +1,5 @@
 <template>
-    <div class="container coursepage">
+    <div class=" coursepage">
         <div class="row d-flex">
             <div class="col-lg-4 courseSidebar">
                 <div>
@@ -7,7 +7,7 @@
                 </div>
                         <div class="pt-5 courseSideBar-items">
                                 <ul>
-                                    <router-link to="/">
+                                    <router-link to="/" style="text-decoration:none">
                                        <li class="courseDashboard">
                                     <span><img src="../../assets/images/stackSidebar.png" alt=""></span> Dashboard</li>
                                     
@@ -20,8 +20,8 @@
                                         <span><img src="../../assets/images/heartSidebar.png" alt=""></span> Wishlist</li>
                                     <li>
                                         <span><img src="../../assets/images/Booksidebars.png" alt=""></span> Enrolled Courses</li>
-                                    <router-link to="/assignment">
-                                        <li>
+                                    <router-link to="/assignment" style="text-decoration:none; color: #ffffff;">
+                                    <li>
                                         <span><img src="../../assets/images/videoSidebar.png" alt=""></span> Active Courses
                                     </li>
                                     </router-link>
@@ -31,9 +31,11 @@
                                     <li>
                                     <span><img src="../../assets/images/project.png" alt=""></span> Project Page
                                     </li>
-                                    <li>
+                                   <router-link to="/classroom" style="color:#ffffff; text-decoration:none">
+                                     <li>
                                         <span><img src="../../assets/images/community.png" alt="">Student Community</span>
                                     </li>
+                                   </router-link>
                                 </ul>
                         </div>
 
@@ -48,7 +50,7 @@
                         </div>
                 
             </div>
-            <div class="col-lg-8 courseotherpart">
+            <div class="col-lg-8 courseotherpart" >
         <div class="container-fluid d-flex justify-content-between py-3 header-class">
                 <div class="d-flex align-items-center">
                   
@@ -154,16 +156,21 @@
                  
              </div>
         </div>
-            </div>
-        </div>
+
+        
+    </div>
+    </div>
     </div>
 </template>
+
+
 
 <style scoped>
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .courseDashboard{

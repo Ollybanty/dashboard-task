@@ -1,72 +1,215 @@
 <template>
    <div class="d-flex assignment-Sect">
        <div class="col-lg-2 assignmentSidebar">
-                <div>
+                <router-link to="/">
+                    <div>
                     <img class="onlearnerlogo " src="../../assets/images/onlearner.png" alt="">
                 </div>
+                </router-link>
                 <div>
                     <h6 class="courseContent text-center">Course Content</h6>
-                    <select class="form-select" aria-label="Default select example">
-                            <option selected>Lesson 1</option>
-                            <option value="1">Intro to Data Analysis</option>
-                            <option value="2">Fundamentals of Data Analysis</option>
-                            <option value="3">Scope of Data Analysis</option>
-                    </select>
-                     <select class="form-select" aria-label="Default select example">
-                            <option selected>Lesson 2</option>
-                            <option value="1">Intro to Frontend Development</option>
-                            <option value="2">Fundamentals of Frontend</option>
-                            <option value="3">Scope of Frontend</option>
-                    </select>
-                     <select class="form-select" aria-label="Default select example">
-                            <option selected>Lesson 3</option>
-                            <option value="1">Introduction to Malware </option>
-                            <option value="2">Intermidiate Malware</option>
-                            <option value="3">Scope of Malware</option>
-                            <option value="4">Advanced Malware</option>
-                    </select>
-                     <select class="form-select" aria-label="Default select example">
-                            <option selected>Lesson 4</option>
-                            <option value="1">Intro to Data Science</option>
-                            <option value="2">Fundamentals of Data Science</option>
-                            <option value="3">Scope of Data Science</option>
-                    </select>
-                     <select class="form-select" aria-label="Default select example">
-                            <option selected>Lesson 5</option>
-                            <option value="1">Introduction to Backend</option>
-                            <option value="2">Philisophy of Backend</option>
-                            <option value="3">Api Integration</option>
-                    </select>
-                     <select class="form-select" aria-label="Default select example">
-                            <option selected>Lesson 6</option>
-                            <option value="1">Intro to UI/UX</option>
-                            <option value="2">Fundamentals of UI/UX</option>
-                            <option value="3">Tools of UI/UX</option>
-                    </select>
-                    <!-- <div class="d-flex">
-                        <div>
-                            Lesson 1
+                    <!-- lesson 1 -->
+                 <div class="accordion accordion-flush accordionContainer" id="accordionFlushExample" >
+                        <div class="accordion-item " style="background: #232B37; color:#ffffff">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed accordionHeading" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Lesson 1
+                            </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Intro to Data Analysis
+                                    </label>
+                                </div>
+                            </div>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Fundamentals of Data Analysis
+                                    </label>
+                                </div>
+                            </div>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Scope of Data Analysis
+                                    </label>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <img src="../../assets/images/downarrow.png" alt="">
+                        <div class="accordion-item" style="background: #232B37; color:#ffffff">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed accordionHeading" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Lesson 2
+                            </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Intro to Frontend Development
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Fundamentals of Frontend
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Scope of Frontend
+                                    </label>
+                                </div>
+                            </div>
                         </div>
-                        
-                    </div> -->
-                    <!-- <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Default checkbox
-                        </label>
-                    </div> -->
+                        <div class="accordion-item" style="background: #232B37; color:#ffffff">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed accordionHeading" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Lesson 3
+                            </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Introduction to Malware
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Intermidiate Malware
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Scope of Malware
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Advanced Malware
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                    
+                    <!-- end of part 1 -->
+
+                    <!-- Beginning of part 2 -->
+                      <div class="accordion accordion-flush" id="accordionFlushExample" >
+                        <div class="accordion-item" style="background: #232B37; color:#ffffff">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed accordionHeading" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                Lesson 4
+                            </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Intro to Data Science
+                                    </label>
+                                </div>
+                            </div>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Fundamentals of Data Science
+                                    </label>
+                                </div>
+                            </div>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Scope of Data Science
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" style="background: #232B37; color:#ffffff">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed accordionHeading" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                Lesson 5
+                            </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Introduction to Backend
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Philisophy of Backend
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Api Integration
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" style="background: #232B37; color:#ffffff">
+                            <h2 class="accordion-header" id="flush-headingSix">
+                            <button class="accordion-button collapsed accordionHeading" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                Lesson 6
+                            </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Intro to UI/UX
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Fundamentals of UI/UX
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Tools of UI/UX
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Advanced UI/UX work tools
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                  
                    
+                
                 </div>
                
        </div>
-       <div class="col-lg-10 slidesContainer">
+       <div class="col-lg-10 slidesContainer" >
            <div>
                <p class="text-center text-light dataClass pt-4">Data Analyst:<span>What is data?</span></p>
            </div>
-
+            <div v-if="assignment">
            <!-- Slides  -->
        <div id="carouselExampleControls" class="carousel slide courseSlides" data-bs-ride="carousel">
             <div class="carousel-inner courseSlidesInner">
@@ -103,7 +246,7 @@
                <p class="previousBtn">Previous</p>
            </div>
         </div>
-        <div class="d-flex justify-content-between next mx-4    ">
+        <div class="d-flex justify-content-between next mx-4    " @click="showTopic">
             <div>
                 <p class="nextBtn">Next </p>
             </div>
@@ -117,25 +260,175 @@
         <div class="mt-3">
             <p class="ratingsText"><span><img src="../../assets/images/star.png" alt=""></span>Leave Ratings</p>
         </div>
-        <div class="mt-3">
+        <router-link to="/getcertificate">
+            <div class="mt-3">
             <p class="certclass"><span><img src="../../assets/images/cert.png" alt=""></span> Get Certificate</p>
         </div>
+        </router-link>
         <div class="mt-3">
             <p class="share"><span><img src="../../assets/images/Share.png" alt=""></span>Share</p>
         </div>
     </div>
 
+        
+    
+
      </div>
+
+     <div v-if="!assignment">
+        
+        <div class=" mt-5 assignmentUploadCtn" v-if="projectbrief">
+            <p class="wireframeHeader">
+                Assignment: Wireframe Homepage
+                    And Contact Us Page
+            </p>
+            <h6 class="assDetails mt-5">
+                Assignment Details
+            </h6>
+            <div class="romanList">
+            <p class="assignmentTask">a. Using the skills we've learnt so far, wireframe the homepage, using the homepage feature listed in the brief:</p>
+            
+                <p>
+                    i. Logo
+                </p>
+                <p> 
+                    
+                    ii. Nav
+
+                </p>
+                 <p class="livingroom">
+                        1. Living Room 2. Bedroom 3. Kitchen & Dining
+                </p>
+                <p>
+                    iii. Shopping Basket
+                </p>
+                <p>
+                    iv. Contact
+                </p>
+                <p>
+                    v. Search Box
+                </p>
+                <p>
+                    vi. Hero Slider
+                </p>
+                <p>
+                    vii. New in store
+                </p>
+                <p>
+                    viii. Inspiration Ideas
+                </p>
+                <p>
+                    ix. Clearance Deals
+                </p>
+                <p>
+                    x. Footer
+                </p>
+            </div>
+
+            <button class="btn btn-large uploadBtn" @click="displayBrief">
+                Upload Assignment
+            </button>
+
+    <div class="d-flex justify-content-between navigationClass">
+        <div class="mx-4 previously d-flex justify-content-between ">
+            <div>
+                <img src="../../assets/images/goLeft.png" alt="">
+            </div>
+           <div>
+               <p class="previousBtn">Previous</p>
+           </div>
+        </div>
+        <div class="d-flex justify-content-between next mx-4    ">
+            <div>
+                <p class="nextBtn">Next </p>
+            </div>
+            <div>
+                <img src="../../assets/images/goRight.png" alt="">
+            </div>
+        </div>
+    </div>
+
+        </div>
+        <div class="px-5 theprojectBrief" v-if="!projectBrief">
+        <h2 class="briefTitle">
+            You have made it this far, see your project brief.
+        </h2>
+        <p class="sunBriefTitle">
+            ShootStar is a photography company. The have contacted you to design a website for them to help them share their work, take bookings, upload short tutorials and also post blugs using all the knowledge you have gathered in this course. Give in details the followins in your submission:
+        </p>
+        <ul>
+            <li>
+                Task flow
+
+            </li>
+            <li>
+                Wireframe
+
+            </li>
+            <li>
+                Low fidelity prototype
+
+            </li>
+            <li>
+                High fidelity prototype
+            </li>
+        </ul>
+
+        <div class="d-flex justify-content-between navigationClass">
+        <div class="mx-4 previously d-flex justify-content-between ">
+            <div>
+                <img src="../../assets/images/goLeft.png" alt="">
+            </div>
+           <div>
+               <p class="previousBtn">Previous</p>
+           </div>
+        </div>
+       <router-link to="/docupload">
+            <div class="d-flex justify-content-between next mx-4    ">
+            <div>
+                <p class="nextBtn">Next </p>
+            </div>
+            <div>
+                <img src="../../assets/images/goRight.png" alt="">
+            </div>
+        </div>
+       </router-link>
+    </div>
+        </div>
+        </div>
+
+        </div>
    </div>     
 </template>
 
+
+<script>
+export default{
+    data(){
+        return{
+            assignment: true,
+            projectbrief: true
+        }
+    },
+    methods:{
+        showTopic(){
+            this.assignment = false
+        },
+        displayBrief(){
+            this.projectbrief = false
+        }
+    }
+}
+</script>
+
+
 <style scoped>
 
-/* .assignment-Sect{
-    height: 100vh;
-    
-} */
-
+*{
+    /* padding: 0; */
+    margin: 0;
+    box-sizing: border-box;
+}
 
 .onlearnerlogo{
     height: 20px;
@@ -157,28 +450,35 @@
         font-weight: 400;
     }
 
-    select{
-        background: #232B37;
-        color: #ffffff;
-        border-left: 0;
-        border-right: 0;
-        border-top: 2px dotted #101927;
-        border-bottom: 2px solid #101927;
-        margin: 10px auto;
-    }
-    option{
-        color: #ffffff;
-        background: transparent;
+    /* Accordions */
+    .accordionContainer{
+        background-color: #232B37;
+        /* background-color: red; */
+        color: red ;
+        border-top: none;
+        margin: 15px auto;
+        /* font-size: 40px; */
     }
 
-    select:hover{
-        /* color: #C01C03; */
-        background: #C01C03;
+    .assignmentUploadCtn{
+        /* background: #C01C03; */
+        padding: 0 35px;
     }
-/* slide styles  */
-/* .slidesContainer{
-    
-} */
+
+    .accordionHeading{
+        color: #ffffff;
+        background: transparent;
+        font-size: 20px;
+        margin: -5px auto
+    }
+
+     .accordionHeading:hover{
+        background-color:#C01C03;
+        border-radius: 10px;
+    }
+    /* Accordions */
+
+   
     .dataClass{
         height: 100px;
         width: 100%;
@@ -222,7 +522,7 @@
         color: #C01C03;
         font-weight: 400;
         font-size: 30px;
-        margin-top: -100px;
+        margin-top: -60px;
         padding: 0 25px;
     }
 
@@ -233,7 +533,8 @@
         padding: 10px 25px;
         border-radius: 10px;
         margin-bottom: 50px;
-        margin-top: 40px
+        margin-top: 40px;
+        cursor: pointer;
     }
 
     .previousBtn{
@@ -256,7 +557,8 @@
         padding: 10px 25px;
         border-radius: 10px;
         margin-bottom: 50px;
-        margin-top: 40px
+        margin-top: 40px;
+        cursor: pointer;
     }
 
     .nextBtn{
@@ -309,4 +611,79 @@
     padding: 0 10px;
 }
 
+.wireframeHeader{
+    font-size: 4rem;
+    font-weight: 600;
+    color: #232B37;
+    line-height: normal;
+}
+
+.assDetails{
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.assignmentTask{
+    font-weight: 600;
+    font-size: 20px;
+    width: 100%;
+    max-width: 75%;
+}
+
+.romanList p{
+    /* list-style:lower-roman; */
+    font-weight: 600;
+    font-size: 20px;
+    /* color: red; */
+}
+
+.romanList p:hover{
+    text-decoration: underline;
+    color:#C01C03;
+    cursor: pointer;
+}
+
+.livingroom{
+    font-weight: 600;
+}
+
+.uploadBtn{
+    background: #C01C03;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px;
+    height: 60px;
+    width: 250px;
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+.navigationClass{
+    margin-bottom: 500px;
+    margin-top: 50px;
+}
+
+.briefTitle{
+    width: 100%;
+    max-width: 65%;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.sunBriefTitle{
+    width: 100%;
+    max-width: 60%;
+    font-weight: 400;
+}
+
+.theprojectBrief{
+    margin-top: 70px;
+}
+
+.theprojectBrief ul li{
+    list-style-type: number;
+}
 </style>

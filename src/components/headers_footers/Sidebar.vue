@@ -5,7 +5,7 @@
         </div>
         <div class="pt-5 sideBar-items">
             <ul>
-                  <router-link to="/">
+                  <router-link to="/" style="text-decoration:none; color: #ffffff">
                         <li>
                          <span><img src="../../assets/images/stackSidebar.png" alt=""></span> Dashboard
                          </li>
@@ -20,7 +20,7 @@
                 <li>
                     <span><img src="../../assets/images/heartSidebar.png" alt=""></span> Wishlist
                 </li>
-                <router-link to="/courses">
+                <router-link to="/courses" style="text-decoration:none; color:#ffffff">
                     <li>
                     <span><img src="../../assets/images/Booksidebars.png" alt=""></span> Enrolled Courses
                 </li>
