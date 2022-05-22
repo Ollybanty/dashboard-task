@@ -26,8 +26,11 @@
                 </li>
                 </router-link>
                 
-                <li>
-                    <span><img src="../../assets/images/videoSidebar.png" alt=""></span> Active Courses</li>
+                <router-link to="/assignment" style="text-decoration:none; color:#ffffff">
+                    <li>
+                    <span><img src="../../assets/images/videoSidebar.png" alt=""></span> Active Courses
+                </li>
+                </router-link>
                 <li >
                     <span><img src="../../assets/images/ConfirmedSidebar.png" alt=""></span> Completed Courses
                 </li>

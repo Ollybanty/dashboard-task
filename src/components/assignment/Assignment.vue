@@ -260,7 +260,7 @@
         <div class="mt-3">
             <p class="ratingsText"><span><img src="../../assets/images/star.png" alt=""></span>Leave Ratings</p>
         </div>
-        <router-link to="/getcertificate">
+        <router-link to="/getcertificate" style="text-decoration:none;">
             <div class="mt-3">
             <p class="certclass"><span><img src="../../assets/images/cert.png" alt=""></span> Get Certificate</p>
         </div>

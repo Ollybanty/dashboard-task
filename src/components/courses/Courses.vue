@@ -2,9 +2,14 @@
     <div class=" coursepage">
         <div class="row d-flex">
             <div class="col-lg-4 courseSidebar">
-                <div>
-                    <img class="onlearnerlogo " src="../../assets/images/onlearner.png" alt="">
-                </div>
+
+                    <router-link to="/" style="text-decoration:none">
+                        <div>
+
+                        <p class="onlearner">:<span>On-</span>learner</p>
+                    </div>
+                    </router-link>
+                
                         <div class="pt-5 courseSideBar-items">
                                 <ul>
                                     <router-link to="/" style="text-decoration:none">
@@ -28,9 +33,11 @@
                                     <li >
                                         <span><img src="../../assets/images/ConfirmedSidebar.png" alt=""></span> Completed Courses
                                     </li>
-                                    <li>
+                                    <router-link to="/docupload" style="color:#ffffff; text-decoration:none">
+                                     <li>
                                     <span><img src="../../assets/images/project.png" alt=""></span> Project Page
                                     </li>
+                                    </router-link>
                                    <router-link to="/classroom" style="color:#ffffff; text-decoration:none">
                                      <li>
                                         <span><img src="../../assets/images/community.png" alt="">Student Community</span>
@@ -173,6 +180,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.onlearner{
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+     padding-left: 30px;
+  padding-top: 15px;
+}
+
+.onlearner span{
+    color: #C01C03;
+}
+
 .courseDashboard{
     color: #ffffff;
 }
@@ -188,12 +208,6 @@
     margin-bottom: 700px;
     /* width: 500px; */
     
-}
-
-.onlearnerlogo{
-  padding-left: 30px;
-  padding-top: 15px;
-
 }
 
 .courseSidebar{

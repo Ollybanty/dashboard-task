@@ -30,10 +30,12 @@
                     <img src="../../assets/images/video.png" alt="" />
                 </div>
 
-                <div>
+                <router-link to="/assignment" style="text-decoration:none">
+                  <div>
                     <p class="bookNumber">5</p>
                     <p class="bookText">Active Courses</p>
                 </div>
+                </router-link>
                 </div>
                 <div
                 class="g-col-6 d-flex justify-content-evenly align-items-stretch book-card"

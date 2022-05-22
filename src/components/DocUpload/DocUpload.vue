@@ -1,7 +1,7 @@
 <template>
   <div class="uploadCtn">
         <div class="d-flex justify-content-between banty px-5">
-            <router-link to="/" class="mt-3">
+            <router-link to="/" class="mt-3" style="text-decoration:none">
                
                 <p class="onlearner">:<span>On-</span>learner</p>
             </router-link>

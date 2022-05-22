@@ -34,9 +34,11 @@
                                     <li >
                                         <span><img src="../../assets/images/ConfirmedSidebar.png" alt=""></span> Completed Courses
                                     </li>
+                                    <router-link to="docupload" style="color:#ffffff; text-decoration:none">
                                     <li>
                                     <span><img src="../../assets/images/project.png" alt=""></span> Project Page
                                     </li>
+                                    </router-link>
                                    <router-link to="/classroom" style="color:#ffffff; text-decoration:none">
                                         <li>
                                         <span><img src="../../assets/images/community.png" alt="">Student Community</span>
@@ -105,6 +107,89 @@
                              <div>
                                  <button class="btn publishBtn">Publish</button>
                              </div>
+                         </div>
+                      </div>
+
+                      <!-- Second card -->
+                       <div class="postCard px-4 py-3">
+                         <div class="profileInput">
+                              <p class="profilename"><span><img src="../../assets/images/profile-pic.png" alt=""></span> Hi Oladele</p>
+                              <p class="timeText">5 mins ago</p>
+                              <p class="shareInput px-4 py-3 mt-5 mb-4 ">
+                                  What would you like to share What would you like to share What would you like to share What would you like to share What would you like to share
+                              </p>
+                          </div>    
+                         <div class="d-flex">
+                             
+                                <div class="d-flex">
+                                    <div>
+                                        <img class="likeImgs" src="../../assets/images/heartFilled.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="likeTexts">8 Likes</p>
+
+                                    </div>
+                                </div>
+                                 <div class="d-flex">
+                                    <div>
+                                        <img class="likeImgs" src="../../assets/images/comment.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="likeTexts">18 Comments</p>
+
+                                    </div>
+                                </div>
+                             
+                               <div class="d-flex">
+                                    <div>
+                                        <img class="likeImgs" src="../../assets/images/shareOut.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="likeTexts">6 Shares</p>
+
+                                    </div>
+                                </div>
+                         </div>
+                      </div>
+                      <!-- Third card -->
+                           <div class="postCard px-4 py-3">
+                         <div class="profileInput">
+                              <p class="profilename"><span><img src="../../assets/images/profile-pic.png" alt=""></span> Hi Oladele</p>
+                              <p class="timeText">5 mins ago</p>
+                              <p class="shareInput px-4 py-3 mt-5 mb-4 ">
+                                  What would you like to share What would you like to share What would you like to share What would you like to share What would you like to share
+                              </p>
+                          </div>    
+                         <div class="d-flex">
+                             
+                                <div class="d-flex">
+                                    <div>
+                                        <img class="likeImgs" src="../../assets/images/heartFilled.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="likeTexts">8 Likes</p>
+
+                                    </div>
+                                </div>
+                                 <div class="d-flex">
+                                    <div>
+                                        <img class="likeImgs" src="../../assets/images/comment.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="likeTexts">18 Comments</p>
+
+                                    </div>
+                                </div>
+                             
+                               <div class="d-flex">
+                                    <div>
+                                        <img class="likeImgs" src="../../assets/images/shareOut.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="likeTexts">6 Shares</p>
+
+                                    </div>
+                                </div>
                          </div>
                       </div>
                     </div>
@@ -247,7 +332,7 @@
     border-radius: 50%;
     height: 60px;
     width: 60px;
-    margin-right: 50px;
+    margin-right: 30px;
 }
 
 .postCard{
@@ -256,6 +341,8 @@
     max-width: 800px;
     background: #ffffff;
     border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0px 2px 19px rgba(0, 0, 0, 0.13);
 }
 
 .cardHead{
@@ -272,6 +359,8 @@
     margin-bottom: 20px;
   
 }
+
+
 
 .cardInput:focus{
     outline: none;
@@ -302,6 +391,45 @@
     width: 130px;
     font-weight: 600;
     color: #ffffff;
+}
+
+.likeImgs{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    margin-top: 5px
+}
+
+.likeTexts{
+    font-size: 20px;
+    color: #8F8E95;
+    margin-right: 70px;
+}
+
+.shareInput{
+    height: 120px;
+    width: 750px;
+    border-radius: 20px;
+    background: #E5E5E5;
+    color: #232B37;
+    font-weight: 500;
+    font-size: 20px;
+    /* padding: 10px auto; */
+    border:none;
+    margin-bottom: 20px;
+}
+
+.profileInput{
+    position: relative;
+    /* margin-bottom: 50px; */
+}
+
+.timeText{
+    color: #8F8E95;
+    position: absolute;
+    top: 45px;
+    left: 95px;
+    /* bottom: 1px; */
 }
 
 </style>>
